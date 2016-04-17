@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--m colors-->
+    <color name="background_before">#1874CD</color>
+
+    <color name="green">#009900</color>
+    <color name="white">#ffffff</color>
+    <color name="white_main">#a0ffffff</color>
+
+    <!--a) #ffffcc  b) #ffccff  c) #ccffcc and d) #ccffff-->
+    <color name="toolbar">#ccffff</color>
+    <color name="title">#33beb1</color>
+
+    <color name="select_item">#ccffff</color>
+</resources>

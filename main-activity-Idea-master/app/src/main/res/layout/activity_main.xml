@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context="com.idea.mainactivityidea.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/toolbar"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <!--android:background="?attr/colorPrimary"-->
+
+
+            <ImageView
+                android:id="@+id/logoImv"
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_gravity="center_vertical|start"
+                android:src="@drawable/vividlogo"/>
+
+
+            <TextView
+                android:id="@+id/titleTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/title"
+                android:textSize="22sp"
+                android:text="@string/title"/>
+
+
+            <ImageButton
+                android:id="@+id/settingsImBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@null"
+                android:layout_gravity="center_vertical|end"
+                android:src="@drawable/setgear"/>
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/title"
+        app:fabSize="normal"
+        android:src="@drawable/ic_add"/>
+
+    <!--<android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/title"
+        android:background="@null"
+        android:src="@drawable/ic_add" />-->
+
+</android.support.design.widget.CoordinatorLayout>
